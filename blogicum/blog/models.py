@@ -90,8 +90,6 @@ class Comment(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
 
-    class Meta:
-        ordering = ('created_at',)
 
     class Meta:
         verbose_name = 'комментарий'
